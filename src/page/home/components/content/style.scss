@@ -1,0 +1,166 @@
+.content {
+    padding: 0 12px;
+
+    .slide_image_gif {
+        position: relative;
+        top: -30px;
+        padding: 0 12px;
+
+        .img_gif {
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+    @media screen and (max-width: 760px) { 
+        .slide_image_gif {
+            top: 12px;
+        }
+    }
+
+    .scam_today {
+        margin: 12px 0;
+        h2 {
+            color: #2b6289;
+            text-transform: uppercase;
+        }
+        @media screen and (max-width: 760px) { 
+            h2 {
+               font-size: 17px;
+            }
+        }
+    }
+
+    .list_scam_today {
+        text-align:  left;
+
+        .list_scam_today_item {
+            padding: 16px;
+            border: 1px solid #DDDDDD;
+            border-top: 0px;
+
+            .icon_pen {
+                color: #3e57d5;
+            }
+
+            .info_time {
+                font-size: 14px;
+                color: #6a7176;
+            }
+
+            .scam_name {
+                font-size: 16px;
+                color: #222222;
+
+                &:hover {
+                    color: #3e57d5;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        > * {
+            &:first-child {
+                border-top: 1px solid #DDDDDD;
+            }
+         }
+    }
+
+    .xem_them_scam {
+        text-align: center;
+        margin: 12px 0;
+        button {
+            text-transform: uppercase;
+            padding: 6px 12px;
+            border: 1px solid #FF0000;
+            color: #FF0000;
+            cursor: pointer;
+            font-size: 15px;
+        }
+    }
+
+    .img_gif_2 {
+        margin: 12px 0;
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .table_cmt {
+        margin: 16px auto;
+        width: 100%;
+        border: 1px solid #ddd;
+        text-align: left;
+        border-collapse: collapse;
+        border-radius: 6px;
+        font-size: 14px;
+        
+        thead {
+            tr {
+                th {
+                    padding: 12px; 
+                    text-align: left;
+                    border-bottom: 1px solid #ddd;
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                td {
+                    padding: 12px;
+                    text-align: justify;
+                    .cmt_body {
+                        padding-left: 0px; 
+                        color: #0000EE;
+                        cursor: pointer;
+                    }
+                }
+                
+                > * {
+                    &:first-child {
+                        width: 40%;
+                    }
+                    &:last-child {
+                        width: 60%;
+                    }
+                }
+            }
+            
+            .icon_user {
+                color: #ddd;
+            }
+            .row_color_2 {
+                background: #F6F8F7;
+            }
+
+            .box_icon_user {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                background: #F6F8F7;
+            }
+        }
+    }
+
+    .box_quiz {
+        margin: 48px 0 12px 0;
+        .quiz {
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+
+        .collapse_quiz {
+            margin: 12px 0;
+            text-align: left;
+        }
+    }
+    
+    .ul_collapse {
+        li {
+            margin-left: 36px;
+        }
+    }
+}
+

@@ -1,0 +1,152 @@
+.report {
+    width: 80%;
+    margin: 0 auto;
+    h3 {
+        color: #49A2E8;
+        text-transform: uppercase;
+        margin: 16px 0;
+        font-weight: 700;
+    }
+
+    .form_report_box {
+        .form_report {
+            .form_report_row {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 4px;
+
+                .form_report_row_l, .form_report_row_r {
+                    flex: 1;
+                    padding: 12px;
+                    position: relative;
+
+                    input {
+                        width: 100%;
+                        padding: 16px;
+                        border: 1px solid #ced0d4;
+                        border-radius: 6px;
+                        outline: none;
+
+                        &:focus {
+                            border: 1px solid blue;
+                        }
+                        &::placeholder {
+                            color: #DFDDDD;
+                        }
+                    }
+
+                    span {
+                        position: absolute;
+                        top: 0px;
+                        left: 30px;
+                        color: #65676b;
+                        background: #FFFFFF;
+                        padding: 2px 6px;
+                        font-size: 14px;
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            @media screen and (max-width: 760px) {
+                .form_report_row {
+                    flex-direction: column;
+                }
+            }
+
+            .text_row {
+                margin: 12px;
+                font-size: 14px;
+                font-weight: 500;
+                text-align: left;
+                .text_row_des {
+                    color: #FF0000;
+                }
+                .text_row_link {
+                    color: #551A8B;
+                    a {
+                        text-decoration: underline;
+                    }
+                }
+                .text_row_icon {
+                    color: #FFCC4D;
+                }
+            }
+
+            .input_upload_row {
+                padding: 8px 12px;
+                border: 1px solid #ced0d4;
+                margin: 12px;
+                border-radius: 6px;
+
+                span {
+                    font-size: 16px;
+                    color: #3C4043;
+                    font-weight: 500;
+                    cursor: pointer;
+                }
+            }
+
+            .input_tarea_row {
+                padding: 12px;
+                position: relative;
+
+                textarea {
+                    width: 100%;
+                    padding: 16px;
+                    border: 1px solid #ced0d4;
+                    border-radius: 6px;
+                    outline: none;
+
+                    &:focus {
+                        border: 1px solid blue;
+                    }
+                    &::placeholder {
+                        color: #DFDDDD;
+                    }
+                }
+                span {
+                    position: absolute;
+                    top: 0px;
+                    left: 30px;
+                    color: #65676b;
+                    background: #FFFFFF;
+                    padding: 2px 6px;
+                    font-size: 14px;
+                    font-weight: 700;
+                }
+            }
+
+            .input_radio_row {
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+                margin: 0 12px;
+                
+                > * {
+                    &:first-child {
+                        margin-bottom: 6px;
+                    }
+                }
+            }
+
+            .sumit_row {
+                margin: 12px 0;;
+                button {
+                    background: #FF0000;
+                    color: #FFFFFF;
+                    padding: 14px 36px ;
+                    border: 0px;
+                    border-radius: 6px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .report {
+        width: 100%;
+    }
+}

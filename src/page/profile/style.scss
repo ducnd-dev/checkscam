@@ -1,0 +1,268 @@
+.profile {
+    img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin: 12px;
+    }
+    h1 {
+        margin: 12px;
+    }
+
+    .message {
+        button {
+            background: #4285f4;
+            color: #fff;
+            padding: 10px 20px;
+            margin: 0 auto 20px;
+            border-radius: 10px;
+            border: 0;
+            font-size: 14px;
+            margin: 8px;
+            cursor: pointer;
+
+            span {
+                margin-right: 6px;
+            }
+        }
+        .telegram_des {
+            font-weight: bold;
+            position: relative;
+            .body_modal {
+                position: absolute;
+                top: 150%;
+                left: 50%;
+                width: 130%;
+                z-index: 4;
+                background: #FFFFFF;
+                color: #333;
+                padding: 12px;
+                text-align: left;
+                border-radius: 6px;
+                line-height: 16px;
+                cursor: default;
+                .body_modal_button {
+                    width: 100%;
+                    text-align: right;
+                    button {
+                        background: #F3D337;
+                        color: #333;
+                        font-weight: 900;
+                    }
+                }
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: -7px; /* Điều chỉnh vị trí của mũi tên */
+                    left: 0;
+                    width: 0;
+                    height: 0;
+                    border-left: 20px solid transparent;
+                    border-right: 20px solid transparent;
+                    border-bottom: 20px solid #FFFFFF;
+                }
+            }
+            @media screen and (max-width: 760px) {
+                .body_modal {
+                    // left: 0px;
+                    left: auto;
+                    right: 0;
+
+                    &:before { 
+                        left: auto;
+                        right: 0;
+                    }
+                }
+            }
+        }
+        .telegram_rim {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            bottom: -8px;
+            left: -8px;
+            border: 3px dashed #F3D337 ;
+            z-index: 4;
+            border-radius: 10px;
+        }
+    }
+
+    .profile_contact {
+        display: flex;
+        margin: 12px;
+        text-align: left;
+
+        .contact_1, .fund_1 {
+            padding: 12px;
+            border: 1px solid #d2d27c;
+            border-radius: 10px;
+            flex: 1;
+        }
+        
+        .contact_1 {
+            margin-right: 6px;
+            .social_box {
+                display: flex;
+                justify-content: space-between;
+               
+                .social {
+                    div {
+                        margin-bottom: 8px;
+                        span {
+                            .fb_img {
+                                width: 32px;
+                                height: 32px;
+                                border-radius: 50%;
+                                margin: 0 0px 0 -6px;
+                            }
+                            .zl_img {
+                                width: 20px;
+                                height: 20px;
+                                border-radius: 50%;
+                                margin: 0 6px 0 0px;
+                            }
+                            .ea_img {
+                                width: 20px;
+                                height: 20px;
+                                border-radius: 50%;
+                                margin: 0 6px 0 0px;
+                            }
+                        }
+                    }
+                }
+                .qr {
+                    img {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+        .fund_1 {
+            margin-left: 6px;
+            .lock {
+                display: flex;
+                justify-content: space-between;
+
+                div {
+                    .icon_lock {
+                        width: 110px;
+                        height: 110px;
+                        margin: 0;
+                    }
+
+                    .text_gray {
+                        color: "#5F6368";
+                        font-weight: 700;
+                        margin: 0 4px;
+                    }
+                    .text_red {
+                        color: #FF0000;
+                        font-weight: 700;
+                        margin: 0 4px;
+                    }
+                }
+            }
+        }
+        @media screen and (max-width: 760px) {
+            .contact_1 {
+                margin: 0;
+                margin-bottom: 12px;
+            }
+            .fund_1 {
+                margin: 0;
+            }
+        }
+    }
+    @media screen and (max-width: 760px) {
+        .profile_contact {
+            flex-direction: column;
+        }
+    }
+
+    .service_box {
+        margin: 12px;
+        border: 1px solid #d2d27c;
+        border-radius: 10px;
+        text-align: left;
+        padding: 12px;
+        position: relative;
+
+        ul {
+            li {
+                margin-left: 24px;
+            }
+        }
+
+        .tk {
+            margin-top: 12px;
+            ul {
+                li {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        .mark {
+            position: absolute;
+            bottom: -110px;
+            right: 8px;
+            img {
+                margin: 0;
+                width: 300px;
+                height: 300px;
+                opacity: 0.2;
+                z-index: -1;
+            }
+            @media screen and (max-width: 760px) {
+                img {
+                    width: 160px;
+                    height: 160px;
+                }
+            }
+        }
+        @media screen and (max-width: 760px) {
+            .mark { 
+                bottom: -70px;
+                right: 2px;
+            }
+        }
+    }
+    
+    .text_info {
+        margin: 24px 12px 12px 12px;
+        font-size: 14px;
+        text-align: left;
+
+        .text_info_icon {
+            color: #FFCC4D !important;
+        }
+        .text_info_des {
+            .text_info_1 {
+                text-decoration: underline;
+            }
+            .text_info_2 {
+                color: #0000EE;
+                margin-left: 4px;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .modal_telegram {
+        
+        .overlay {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba($color: #000000, $alpha: 0.5);
+            z-index: 3;
+        }
+        .body {
+            z-index: 4;
+        }
+    }
+}

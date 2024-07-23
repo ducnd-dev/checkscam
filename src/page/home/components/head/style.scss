@@ -1,0 +1,115 @@
+.hompage_head {
+    h2 {
+        font-size: 29px;
+        color: #FF0000;
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        margin-top: 12px;
+    }
+
+    .tk_num {
+        font-weight: 700;
+        color: #FF0000;
+        margin-left: 3px;
+    }
+
+    .tk_des {
+        font-weight: 500;
+        margin-left: 3px;
+    }
+
+    .other_1 {
+        color: #FF0000;
+        font-size: 16px;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    .form_search {
+        margin: 12px auto;
+        width: 90%;
+        @media screen and (min-width: 760px) {
+            width: 56% ;
+        }
+        
+        form {
+            width: 100%;
+            position: relative;
+           
+            input {
+                width: 100%;
+                border-radius: 10px;
+                box-sizing: border-box;
+                padding: 16px 60px 16px 24px;
+                border: 0.2px solid rgb(214, 201, 201);
+                box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+                outline: none;
+                font-size: 16px;
+            }
+            button {
+                position: absolute;
+                height: 100%;
+                top: 0px;
+                right: 0px;
+                background-color: transparent;
+                border: 0.5px solid transparent;
+                width: 40px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+        }
+        
+    }
+
+    .slide_hompage {
+        margin: 0 8px;
+        a {
+            color: #FF0000;
+            font-size: 14px;
+            text-decoration: none;
+        }
+    }
+
+    .list_button {
+        margin: 24px auto;
+        position: relative;
+        z-index: 2;
+
+        > * {
+            &:first-child { 
+                background-color: #FF0000;
+                margin-right: 6px;
+            }
+            &:last-child {
+                background-color: #4280FF;
+                margin-left: 6px;
+            }
+        }
+        .button_item {
+            color: #FFFFFF;
+            font-size: 15px;
+            font-weight: 700;
+            padding: 10px 36px;
+            border: 0px solid transparent;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+    }
+ 
+    @media screen and (max-width: 760px) {
+        .list_button {
+            display: none;
+        }
+    }
+    
+    .slide_image_img {
+        position: relative;
+        top: -30px;
+        padding: 0 12px;
+    }
+    @media screen and (max-width: 760px) { 
+        .slide_image_img {
+            top: 12px;
+        }
+    }
+}

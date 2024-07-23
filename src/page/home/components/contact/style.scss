@@ -1,0 +1,109 @@
+.contact {
+    margin: 48px 0;
+    position: fixed;
+    right: 16px;
+    bottom: 2px;
+    z-index: 3;
+
+    .contact_icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+
+        .hinh_tron {
+            padding: 5px;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background-color: rgba(0, 0, 0, .15);
+            margin-bottom: 12px;
+            cursor: pointer;
+          
+            &:hover {
+                background: #f3c7c7;
+            }
+            &:hover .cham_nho,  &:hover .cham_to {
+                color: #FF0000;
+            }
+
+            .cham_nho {
+               color: #fff ;
+               font-size: 3px;
+            }
+
+            .cham_to{
+                color: #fff;
+                font-size: 6px;
+                margin: 6px;
+            }
+        }
+    }
+
+    .contact_modal {
+        position: absolute;
+        bottom: 60px;
+        right: 16px;
+        width: 260px;
+
+
+        .contact_body {
+            position: relative;
+            text-align: right;
+           
+            span {
+                color: #ff0000;
+                font-weight: 600;
+                font-size: 12px;
+                text-transform: uppercase;
+                border-radius: 12px;
+                padding: 6px;
+                background: #fff;
+                box-shadow: 0 4px 10px rgba(0,0,0,.15);
+                margin-bottom: 12px;
+
+                &:hover {
+                    background: #FF0000;
+                    color: #fff;
+                    cursor: pointer;
+                }
+            }
+
+            .close_modal {
+                position: absolute;
+                top: -36px;
+                right: 0px;
+                font-size: 24px;
+                color: #999999;
+                cursor: pointer;
+                z-index: 6;
+                background: #FFFFFF;
+                border-radius: 50%;
+            }
+            @media screen and (max-width: 760px) { 
+                .close_modal {
+                    position: absolute;
+                    top: -36px;
+                    left: 0px;
+                }
+            }
+        }
+
+        @media screen and (max-width: 760px) { 
+            .contact_body {
+                text-align: left;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .contact {
+        left: 16px;
+    }
+
+    .contact_modal {
+        left: 16px;       
+    }
+}
